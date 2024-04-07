@@ -1,28 +1,48 @@
 :root {
-    --primary-color: #00639c;
-    --on-primary-color: #ffffff;
-    --secondary-color: #52606f;
-    --on-secondary-color: #ffffff;
-    --error-color: #ba1a1a;
-    --background-color: #fcfcff;
-    --on-background-color: #1a1c1e;
-    --outline-color: #72777f;
+    --primary: #386a04;
+    --on-primary: #ffffff;
+    --primary-container: #b8f483;
+    --on-primary-container: #0d2000;
 
-    background-color: var(--background-color);
+    --secondary: #57624a;
+    --on-secondary: #ffffff;
+    --secondary-container: #dae7c9;
+    --on-secondary-container: #151e0c;
+
+    --tertiary: #386664;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #bbece9;
+    --on-tertiary-container: #00201f;
+
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+    --error-container: #ffdad6;
+    --on-error-container: #410002;
+
+    --background: #fcfcff;
+    --on-background: #1a1c1e;
+    --outline: #72777f;
+    --surface: #fdfdf5;
+    --on-surface: #1a1c18;
+    --surface-variant: #e0e4d6;
+    --on-surface-variant: #44483e;
+
+    background-color: var(--background);
 }
 
 
 .grid-row {
     display: block;
     clear: both;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .grid-column {
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 50em) {
@@ -55,19 +75,21 @@
 
 
 .header {
-    background-color: var(--on-background-color);
+    background-color: var(--on-background);
     display: block;
     clear: both;
     overflow: auto;
     text-align: center;
+    border-bottom: 5px solid var(--outline);
 }
 
 .footer {
-    background-color: var(--on-background-color);
+    background-color: var(--on-background);
     display: block;
     clear: both;
     overflow: auto;
     text-align: center;
+    border-top: 5px solid var(--outline);
 }
 
 .footer-link {
@@ -76,7 +98,7 @@
     font-family: Montserrat, serif;
     font-size: small;
     font-weight: 600;
-    color: var(--background-color);
+    color: var(--background);
 }
 
 
@@ -86,12 +108,12 @@
     font-family: Montserrat, serif;
     font-size: medium;
     font-weight: 600;
-    color: var(--background-color);
+    color: var(--background);
 }
 
 .nav-link:hover {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
+    background-color: var(--primary);
+    color: var(--on-primary);
 }
 
 a {
@@ -103,7 +125,7 @@ a {
 h1 {
     font-family: Montserrat, serif;
     font-size: xxx-large;
-    color: var(--on-background-color);
+    color: var(--on-background);
 }
 
 p {
@@ -119,21 +141,89 @@ p {
     cursor: pointer;
     border-style: hidden;
     border-radius: 5px;
-    border-width: 1rem;
 }
 
-.button:focus {
+:focus {
     outline-color: yellow;
     border-style: solid;
     border-color: yellow;
+    border-width: 0.5em;
 }
 
 .button-primary {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
+    background-color: var(--primary);
+    color: var(--on-primary);
 }
 
 .button-secondary {
-    background-color: var(--secondary-color);
-    color: var(--on-secondary-color);
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+}
+
+.blockquote {
+    display: block;
+    font-family: Montserrat, serif;
+    font-size: medium;
+    font-weight: 400;
+    padding: 10px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    clear: both;
+    float: left;
+}
+
+.blockquote-primary {
+    background-color: var(--primary-container);
+    color: var(--on-primary-container);
+}
+
+.blockquote-secondary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+}
+
+.blockquote-cite {
+    float: right;
+    clear: right;
+}
+
+#citations {
+    display: block;
+    clear: both;
+    color: var(--on-surface-variant);
+}
+
+.citations-container {
+    background-color: var(--surface-variant);
+    border-top: 2px solid var(--outline);
+    display: block;
+    clear: both;
+    overflow: auto;
+}
+
+.citations-list {
+    text-decoration: none;
+    list-style: none;
+    font-family: Montserrat, serif;
+    font-size: small;
+    padding: 0;
+    margin: 0.5em;
+}
+
+.primary-container {
+    background-color: var(--primary-container);
+    display: block;
+    clear: both;
+    overflow: auto;
+    border-top: 2px solid var(--outline);
+    border-bottom: 2px solid var(--outline);
+}
+
+.on-primary-container {
+    color: var(--on-primary-container);
+}
+
+ul {
+    font-family: Montserrat, serif;
+    list-style: square;
 }
