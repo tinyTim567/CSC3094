@@ -30,6 +30,9 @@
     background-color: var(--background);
 }
 
+html, body {
+    margin: 0;
+}
 
 .grid-row {
     display: block;
@@ -41,8 +44,7 @@
 .grid-column {
     box-sizing: border-box;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
+    padding: 0.5em;
 }
 
 @media (min-width: 50em) {
@@ -67,6 +69,13 @@
 }
 
 @media (min-width: 50em) {
+    .column-half {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 50em) {
     .column-full {
         width: 100%;
         float: left;
@@ -79,6 +88,8 @@
     display: block;
     clear: both;
     overflow: auto;
+    position: sticky;
+    top: 0;
     text-align: center;
     border-bottom: 5px solid var(--outline);
 }
@@ -108,6 +119,7 @@
     font-family: Montserrat, serif;
     font-size: medium;
     font-weight: 600;
+    border-radius: 5px;
     color: var(--background);
 }
 
@@ -125,11 +137,20 @@ h1 {
     font-family: Montserrat, serif;
     font-size: xxx-large;
     color: var(--on-background);
+    margin-top: 0.5em;
 }
 
 p {
     font-family: Montserrat, serif;
     font-size: medium;
+}
+
+hr {
+    color: var(--outline);
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
 }
 
 .button {
@@ -165,8 +186,7 @@ p {
     font-family: Montserrat, serif;
     font-size: medium;
     font-weight: 400;
-    padding: 10px;
-    border: 2px solid var(--primary);
+    padding: 1em;
     border-radius: 5px;
     clear: both;
     float: left;
@@ -175,11 +195,19 @@ p {
 .blockquote-primary {
     background-color: var(--primary-container);
     color: var(--on-primary-container);
+    border: 2px solid var(--primary);
 }
 
 .blockquote-secondary {
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--secondary-container);
+    color: var(--on-secondary-container);
+    border: 2px solid var(--secondary);
+}
+
+.blockquote-tertiary {
+    background-color: var(--tertiary-container);
+    color: var(--on-tertiary-container);
+    border: 2px solid var(--tertiary);
 }
 
 .blockquote-cite {
@@ -195,7 +223,6 @@ p {
 
 .citations-container {
     background-color: var(--surface-variant);
-    border-top: 2px solid var(--outline);
     display: block;
     clear: both;
     overflow: auto;
@@ -215,8 +242,7 @@ p {
     display: block;
     clear: both;
     overflow: auto;
-    border-top: 2px solid var(--outline);
-    border-bottom: 2px solid var(--outline);
+    padding-bottom: 2em;
 }
 
 .on-primary-container {
