@@ -5,5 +5,10 @@
 {% block content %}
     {% block error %}{% endblock %}
 
-    <p><a href="{{ url_for('index') }}">Click here to return to the homepage</a>.</p>
+    <section class="grid-row">
+        <div class="grid-column column-full">
+
+            <a class="button button-primary" href="{{ url_for('index') }}">Return to the homepage</a>
+        </div>
+    </section>
 {% endblock %}

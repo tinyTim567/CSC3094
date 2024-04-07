@@ -2,8 +2,12 @@
 
 {% block title %}Internal Server Error{% endblock %}
 
-{% block content %}
-    <h1>500: Internal Server Error</h1>
+{% block error %}
+    <section class="grid-row">
+        <div class="grid-column column-full">
+            <h1>500: Internal Server Error</h1>
 
-    <p>An unknown error has occurred. Please try again later. </p>
+            <p>An unknown error has occurred. Please try again later. </p>
+        </div>
+    </section>
 {% endblock %}

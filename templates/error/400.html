@@ -2,8 +2,12 @@
 
 {% block title %}Bad Request{% endblock %}
 
-{% block content %}
-    <h1>400: Bad Request</h1>
+{% block error %}
+    <section class="grid-row">
+        <div class="grid-column column-full">
+            <h1>400: Bad Request</h1>
 
-    <p>An error has occurred. Please try again later. </p>
+            <p>An error has occurred. Please try again later. </p>
+        </div>
+    </section>
 {% endblock %}
