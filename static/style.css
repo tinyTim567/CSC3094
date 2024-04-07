@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #00639c;
+    --on-primary-color: #ffffff;
+    --secondary-color: #52606f;
+    --on-secondary-color: #ffffff;
+    --error-color: #ba1a1a;
+    --background-color: #fcfcff;
+    --on-background-color: #1a1c1e;
+    --outline-color: #72777f;
+
+    background-color: var(--background-color);
+}
+
+
+.grid-row {
+    display: block;
+    clear: both;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.grid-column {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width: 50em) {
+    .column-one-quarter {
+        width: 25%;
+        float: left;
+    }
+}
+
+@media (min-width: 50em) {
+    .column-one-third {
+        width: 33%;
+        float: left;
+    }
+}
+
+@media (min-width: 50em) {
+    .column-two-thirds {
+        width: 66%;
+        float: left;
+    }
+}
+
+@media (min-width: 50em) {
+    .column-full {
+        width: 100%;
+        float: left;
+    }
+}
+
+
+.header {
+    background-color: var(--on-background-color);
+    display: block;
+    clear: both;
+    overflow: auto;
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--on-background-color);
+    display: block;
+    clear: both;
+    overflow: auto;
+    text-align: center;
+}
+
+.footer-link {
+    display: inline;
+    padding: 1rem;
+    font-family: Montserrat, serif;
+    font-size: small;
+    font-weight: 600;
+    color: var(--background-color);
+}
+
+
+.nav-link {
+    display: inline;
+    padding: 1rem;
+    font-family: Montserrat, serif;
+    font-size: medium;
+    font-weight: 600;
+    color: var(--background-color);
+}
+
+.nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+h1 {
+    font-family: Montserrat, serif;
+    font-size: xxx-large;
+    color: var(--on-background-color);
+}
+
+p {
+    font-family: Montserrat, serif;
+    font-size: medium;
+}
+
+.button {
+    font-family: Montserrat, serif;
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    border-style: hidden;
+    border-radius: 5px;
+    border-width: 1rem;
+}
+
+.button:focus {
+    outline-color: yellow;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+}
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    color: var(--on-secondary-color);
+}
