@@ -117,7 +117,6 @@
 }
 
 a {
-    text-decoration: inherit;
     color: inherit;
 }
 
@@ -141,6 +140,7 @@ p {
     cursor: pointer;
     border-style: hidden;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 :focus {
