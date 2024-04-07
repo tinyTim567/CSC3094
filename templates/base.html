@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <nav class="nav grid-row">
+        <ul class="grid-column column-full">
+            <li class="nav-link"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="nav-link"><a href="{{ url_for('phishing') }}">Phishing</a></li>
+            <li class="nav-link"><a href="{{ url_for('malware') }}">Malware</a></li>
+            <li class="nav-link"><a href="{{ url_for('passwords') }}">Passwords</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer class="footer">
+    <nav class="nav grid-row">
+        <ul class="grid-column column-full">
+            <li class="nav-link"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="nav-link"><a href="{{ url_for('phishing') }}">Phishing</a></li>
+            <li class="nav-link"><a href="{{ url_for('malware') }}">Malware</a></li>
+            <li class="nav-link"><a href="{{ url_for('passwords') }}">Passwords</a></li>
+        </ul>
+    </nav>
+    <section class="grid-row">
+        <ul class="grid-column column-full">
+            <li class="footer-link"><a href="https://thomasmcknight.dev" target="_blank">© 2024 Thomas McKnight</a></li>
+            <li class="footer-link"><a href="{{ url_for('about') }}">About this site</a></li>
+        </ul>
+    </section>
+
+
+</footer>
+
+</body>
+
+</html>

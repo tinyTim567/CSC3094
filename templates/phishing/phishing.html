@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Phishing{% endblock %}
+
+{% block content %}
+    <section class="grid-row">
+        <div class="grid-column column-two-thirds">
+            <h1>Phishing</h1>
+            <p>
+                Phishing is a type of scam where an attacker attempts to deceive a user into giving away personal
+                information, such as passwords or bank details, using scam emails, text messages or phone calls.
+            </p>
+            <p>
+                Phishing is one of the main methods used to commit fraud, so it's important to know how to recognise
+                scam
+                messages.
+            </p>
+            <button class="button button-primary">Learn more</button>
+        </div>
+        <div class="grid-column column-one-third">
+            {# <img alt="" src="/static/images/phishing.png"/>#}
+            <p>Hello there</p>
+        </div>
+    </section>
+
+    <section class="grid-row">
+        <div class="grid-column column-one-third">
+            <p>
+                Hello there
+            </p>
+        </div>
+        <div class="grid-column column-two-thirds">
+            <h1>Reporting Fraud and Scams</h1>
+            <p>
+                You can report scam emails, calls, texts, and websites using the National Cyber Security Centre website.
+            </p>
+            <p>
+                If you have been a victim of fraud, you should report it to Action Fraud using their online fraud
+                reporting tool.
+            </p>
+            <button class="button button-primary">Report fraud</button>
+            <button class="button button-secondary">Report a scam</button>
+        </div>
+    </section>
+{% endblock %}
