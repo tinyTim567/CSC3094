@@ -22,6 +22,7 @@ def malware():
 def passwords():
     return render_template("passwords/passwords.html")
 
+
 @app.route("/passwords/quiz")
 def passwords_quiz():
     return render_template("passwords/passwords_quiz.html")
