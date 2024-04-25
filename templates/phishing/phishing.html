@@ -42,4 +42,29 @@
                 Report a scam <span class="material-symbols-outlined size-20">open_in_new</span></a>
         </div>
     </section>
+
+    <hr>
+
+    <section class="grid-row" id="information">
+        <div class="grid-column column-full">
+
+        </div>
+    </section>
+
+    <section class="grid-row" id="quiz-link">
+        <div class="grid-column column-two-thirds">
+            <h1>Test Your Knowledge</h1>
+            <p>
+                See if you can spot the signs of a phishing email!
+            </p>
+            <br>
+            <a class="button button-primary primary-solid" href="{{ url_for('phishing_quiz') }}">Test your knowledge</a>
+            <br>
+            <br>
+        </div>
+        <div class="grid-column column-one-third">
+            <img src="/static/images/quiz.png" alt="">
+        </div>
+    </section>
+
 {% endblock %}
