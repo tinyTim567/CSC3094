@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Phishing Quiz{% endblock %}
+
+{% block content %}
+
+    <section class="grid-row">
+        <div class="grid-column column-two-thirds">
+            <h1>Phishing Quiz</h1>
+            <p>
+                See if you can recognise the signs of a phishing email.
+            </p>
+        </div>
+        <div class="grid-column column-one-third">
+            <img src="/static/images/quiz.png">
+        </div>
+    </section>
+
+    <section class="grid-row">
+        <fieldset class="grid-column column-full" style="cursor: pointer">
+            <legend>Click all the parts on this email that indicate it could be a phishing attack</legend>
+
+            <details class="grid-row grid-row-no-margin">
+                <summary class="grid-column column-half email email-top">
+                    <b>From:</b> IT Helpdesk &#60;help_desk274@gmail.com&#62;
+                    <br>
+                    <b>Sent:</b> 12 January 2024 15:32
+                    <br>
+                    <b>Subject:</b> Account Security Alert
+                </summary>
+                <p class="grid-column column-half email-info">
+                    The email comes from an unusual email address.
+                </p>
+            </details>
+
+            <details class="grid-row grid-row-no-margin">
+                <summary class="grid-column column-half email"
+                         style="background-color: lightyellow; padding: 10px; border-top:1px solid black; border-bottom: 1px solid black">
+                    EXTERNAL SENDER - Take care when opening links or attachments.
+                </summary>
+                <p class="grid-column column-half email-info">
+                    The email is from someone outside your organisation, and should be treated with caution.
+                </p>
+            </details>
+
+            <div class="grid-row grid-row-no-margin">
+                <div class="grid-column column-half email">
+                    <hr>
+                </div>
+            </div>
+
+            <details class="grid-row grid-row-no-margin">
+                <summary class="grid-column column-half email ">
+                    <b>Review Your Account Information</b>
+                    <br>
+                    <br>
+                    We received a security alert last night about some strange logon behavour on your account between
+                    12:00 and 02:00. We need you to vefity this logon was you.
+                </summary>
+                <p class="grid-column column-half email-info">
+                    The email has bad spelling and grammar.
+                </p>
+            </details>
+
+            <details class="grid-row grid-row-no-margin">
+                <summary class="grid-column column-half email ">
+                    <b>You must respond within 24hr or your account will be deleted.</b>
+                </summary>
+                <p class="grid-column column-half email-info">
+                    The sender is pressuring you to respond quickly.
+                </p>
+            </details>
+
+            <details class="grid-row grid-row-no-margin">
+                <summary class="grid-column column-half email">
+                    <u>Click here to review your account</u>
+                </summary>
+                <p class="grid-column column-half email-info">
+                    This link could be used to steal login details.
+                </p>
+            </details>
+
+            <div class="grid-row grid-row-no-margin">
+                <div class="grid-column column-half email email-bottom">
+                    <p>
+                        Many thanks,
+                        <br>
+                        IT Helpdesk
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+
+{% endblock %}

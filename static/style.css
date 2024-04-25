@@ -43,6 +43,13 @@ html, body {
     padding-bottom: 0.5em;
 }
 
+.grid-row-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .grid-column {
     box-sizing: border-box;
     width: 100%;
@@ -303,3 +310,30 @@ img {
     max-height: 20rem;
 }
 
+details {
+    font-family: Montserrat, serif;
+    font-size: medium;
+}
+
+.email {
+    border-left: 2px solid var(--on-background);
+    border-right: 2px solid var(--on-background);
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.email-top {
+    border-top: 2px solid var(--on-background);
+}
+
+.email-bottom {
+    border-bottom: 2px solid black;
+}
+
+.email-info {
+    background-color: var(--tertiary-container);
+    color: var(--on-tertiary-container);
+    border: 2px solid var(--tertiary);
+    margin: 0;
+}

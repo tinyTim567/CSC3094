@@ -13,6 +13,11 @@ def phishing():
     return render_template("phishing/phishing.html")
 
 
+@app.route("/phishing/quiz")
+def phishing_quiz():
+    return render_template("phishing/phishing_quiz.html")
+
+
 @app.route("/malware")
 def malware():
     return render_template("malware/malware.html")
