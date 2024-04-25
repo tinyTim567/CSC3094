@@ -14,11 +14,11 @@ easy-to-understand way.
 
 With the ever-increasing reliance on digital platforms for large parts of our daily lives, there is a growing need for
 people to have the digital skills needed to use these systems safely while avoiding harmful material online, such as
-phishing and scam emails.
+phishing and scam emails. This can be seen in official statistics on scams and fraud: 
 
-> - 46% of adult internet users have been drawn into engaging in an online scam¹
-> - 25% increase in fraud offences in 2022 compared to 2020²
-> - 61% of fraud incidents in 2022 were cyber related²
+- **46%** of adult internet users have been drawn into engaging in an online scam¹
+- **25%** increase in fraud offences in 2022 compared to 2020²
+- **61%** of fraud incidents in 2022 were cyber related²
 
 Current guidance available online about cyber threats often includes technical language that is difficult for people
 with non-technical backgrounds t understand. Guidance is often textual and includes few examples of the threats
