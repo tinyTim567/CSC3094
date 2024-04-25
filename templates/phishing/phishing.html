@@ -60,18 +60,16 @@
     </section>
 
     <section class="grid-row" id="quiz-link">
-        <div class="grid-column column-two-thirds">
+        <div class="grid-column column-full">
             <h1>Test Your Knowledge</h1>
             <p>
                 See if you can spot the signs of a phishing email!
             </p>
             <br>
-            <a class="button button-primary primary-solid" href="{{ url_for('phishing_quiz') }}">Test your knowledge</a>
+            <a class="button button-primary primary-solid" href="{{ url_for('page.phishing_quiz') }}">
+                Test your knowledge</a>
             <br>
             <br>
-        </div>
-        <div class="grid-column column-one-third">
-            <img src="/images/question-mark.png" alt="">
         </div>
     </section>
 
