@@ -21,8 +21,9 @@
 </head>
 
 <body>
-<header class="header">
-    <nav class="nav grid-row">
+<header class="header" id="header">
+    <nav class="nav grid-row" id="main-navigation">
+        <a class="skip-navigation" href="#main-content">Skip to main content</a>
         <ul class="grid-column column-full">
             <li class="nav-link"><a href="{{ url_for('index') }}">Home</a></li>
             <li class="nav-link"><a href="{{ url_for('phishing') }}">Phishing</a></li>
@@ -37,7 +38,7 @@
     {% endblock %}
 </main>
 
-<footer class="footer">
+<footer class="footer" id="footer">
     <nav class="nav grid-row">
         <ul class="grid-column column-full">
             <li class="nav-link"><a href="{{ url_for('index') }}">Home</a></li>

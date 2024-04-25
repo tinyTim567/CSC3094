@@ -3,7 +3,7 @@
 {% block title %}Phishing{% endblock %}
 
 {% block content %}
-    <section class="grid-row">
+    <section class="grid-row" id="summary">
         <div class="grid-column column-half">
             <h1>Phishing</h1>
             <p>
@@ -15,31 +15,39 @@
                 scam
                 messages.
             </p>
-            <a class="button button-primary primary-solid" href="{{ url_for('phishing_quiz') }}">Learn more</a>
+            <br>
+            <a class="button button-primary primary-solid" href="#information">Learn more</a>
         </div>
         <div class="grid-column column-half">
             <img alt="" src="/static/images/email.png"/>
         </div>
     </section>
 
-    <section class="grid-row">
-        <div class="grid-column column-half">
-            <img alt="" src="/static/images/scam.png"/>
-        </div>
-        <div class="grid-column column-half">
-            <h1>Reporting Fraud and Scams</h1>
-            <p>
-                You can report scam emails, calls, texts, and websites using the National Cyber Security Centre website.
-            </p>
-            <p>
-                If you have been a victim of fraud, you should report it to Action Fraud using their online fraud
-                reporting tool.
-            </p>
-            <a class="button button-primary primary-solid" href="https://www.actionfraud.police.uk/" target="_blank">
-                Report fraud <span class="material-symbols-outlined size-20">open_in_new</span></a>
-            <a class="button button-secondary secondary-solid"
-               href="https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email" target="_blank">
-                Report a scam <span class="material-symbols-outlined size-20">open_in_new</span></a>
+    <hr>
+
+    <section class="primary-container" id="reporting-fraud">
+        <div class="grid-row">
+            <div class="grid-column column-half">
+                <img alt="" src="/static/images/scam.png"/>
+            </div>
+            <div class="grid-column column-half">
+                <h1>Reporting Fraud and Scams</h1>
+                <p>
+                    You can report scam emails, calls, texts, and websites using the National Cyber Security Centre
+                    website.
+                </p>
+                <p>
+                    If you have been a victim of fraud, you should report it to Action Fraud using their online fraud
+                    reporting tool.
+                </p>
+                <br>
+                <a class="button button-primary primary-solid" href="https://www.actionfraud.police.uk/"
+                   target="_blank">
+                    Report fraud <span class="material-symbols-outlined size-20">open_in_new</span></a>
+                <a class="button button-secondary secondary-solid"
+                   href="https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email" target="_blank">
+                    Report a scam <span class="material-symbols-outlined size-20">open_in_new</span></a>
+            </div>
         </div>
     </section>
 
@@ -63,7 +71,7 @@
             <br>
         </div>
         <div class="grid-column column-one-third">
-            <img src="/static/images/quiz.png" alt="">
+            <img src="/images/question-mark.png" alt="">
         </div>
     </section>
 

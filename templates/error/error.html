@@ -5,11 +5,12 @@
 {% block content %}
     {% block error %}{% endblock %}
 
-    <section class="grid-row">
+    <section class="grid-row" id="error-details">
         <div class="grid-column column-full">
             <a class="button button-primary primary-solid" href="{{ url_for('index') }}">Return to the homepage</a>
+            <br>
+            <br>
             <p>
-                <br>
                 If you continue to receive this error, please <a href="mailto:c1029661@ncl.ac.uk">report it here</a>.
             </p>
         </div>
