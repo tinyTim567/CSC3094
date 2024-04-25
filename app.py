@@ -33,14 +33,29 @@ def about():
     return render_template("main/about.html")
 
 
+@app.errorhandler(400)
+def bad_request(error):
+    return render_template("error/400.html"), 400
+
+
+@app.errorhandler(403)
+def forbidden(error):
+    return render_template("error/403.html"), 403
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template("error/404.html"), 404
 
 
 @app.errorhandler(500)
-def page_not_found(error):
+def internal_server_error(error):
     return render_template("error/500.html"), 500
+
+
+@app.errorhandler(503)
+def service_unavailable(error):
+    return render_template("error/503.html"), 503
 
 
 if __name__ == '__main__':
