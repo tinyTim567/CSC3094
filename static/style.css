@@ -209,6 +209,11 @@ hr {
     margin-bottom: 10px;
 }
 
+.button span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .button-primary {
     border: 2px solid var(--primary);
     border-radius: 5px;
