@@ -39,6 +39,8 @@ html, body {
     clear: both;
     margin-left: 15vw;
     margin-right: 15vw;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .grid-column {
@@ -196,6 +198,8 @@ hr {
     border-radius: 5px;
     text-decoration: none;
     background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .button-primary {
