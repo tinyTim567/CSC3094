@@ -47,6 +47,10 @@ html, body {
     padding: 0.5em;
 }
 
+.column-no-padding {
+    padding: 0;
+}
+
 @media (min-width: 50em) {
     .column-one-quarter {
         width: 25%;
@@ -143,6 +147,28 @@ h1 {
 p {
     font-family: Montserrat, serif;
     font-size: medium;
+}
+
+fieldset {
+    border: 2px solid var(--on-background);
+    border-radius: 5px;
+}
+
+legend {
+    font-family: Montserrat, serif;
+    font-size: large;
+    font-weight: bold;
+    color: var(--on-background);
+}
+
+.checkbox {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline;
+    vertical-align: middle;
+    font-family: Montserrat, serif;
+    font-size: medium;
+    cursor: pointer;
 }
 
 hr {
