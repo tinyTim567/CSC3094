@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-from forms import PasswordsQuestion1Form, PasswordsQuestion2Form
+from utils.forms import PasswordsQuestion1Form, PasswordsQuestion2Form
 
 pages = Blueprint("page", __name__, template_folder="templates")
 
