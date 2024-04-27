@@ -22,9 +22,9 @@
 
 <body>
 <header class="header" id="header">
-    <nav class="nav grid-row" id="main-navigation">
-        <a class="skip-navigation" href="#main-content">Skip to main content</a>
+    <nav class="nav grid-row grid-row-no-margin" id="main-navigation">
         <ul class="grid-column column-full">
+            <a class="skip-navigation" href="#main-content">Skip to main content</a>
             <li class="nav-link"><a href="{{ url_for('index') }}">Home</a></li>
             <li class="nav-link"><a href="{{ url_for('page.phishing') }}">Phishing</a></li>
             <li class="nav-link"><a href="{{ url_for('page.malware') }}">Malware</a></li>

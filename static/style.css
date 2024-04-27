@@ -127,7 +127,7 @@ html, body {
 
 
 .nav-link {
-    display: inline;
+    display: inline-block;
     padding: 1rem;
     font-family: Montserrat, serif;
     font-size: medium;
@@ -153,7 +153,8 @@ html, body {
 }
 
 .skip-navigation:focus {
-    left: 10px;
+    position: inherit;
+    display: inline-block;
 }
 
 a {
