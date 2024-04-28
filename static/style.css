@@ -177,6 +177,7 @@ p {
 fieldset {
     border: 2px solid var(--on-background);
     border-radius: 5px;
+    display: inline-block;
 }
 
 legend {
@@ -223,10 +224,10 @@ hr {
     background-color: transparent;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .button span {
-    display: inline-block;
     vertical-align: middle;
 }
 
