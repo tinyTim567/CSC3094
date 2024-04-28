@@ -6,7 +6,68 @@
 
     <section class="grid-row" id="summary">
         <div class="grid-column column-full">
-            <h1>Home</h1>
+            <h1 class="title">Cyber Threat Awareness</h1>
+        </div>
+    </section>
+
+    <section class="grid-row">
+        <div class="grid-column column-two-thirds">
+            <h1>Phishing</h1>
+            <p>
+                Phishing is a type of scam where an attacker attempts to deceive a user into giving away personal
+                information, such as passwords or bank details, using scam emails, text messages or phone calls.
+            </p>
+            <p>
+                Phishing is one of the main methods used to commit fraud, so it's important to know how to recognise
+                scam messages.
+            </p>
+            <a class="button button-primary primary-solid" href="{{ url_for('page.phishing') }}">
+                Learn about phishing
+            </a>
+        </div>
+        <div class="grid-column column-one-third">
+            <img src="/static/images/phishing.png" alt="">
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="primary-container">
+        <div class="grid-row">
+            <div class="grid-column column-one-third">
+                <img src="/static/images/malware.png" alt="">
+            </div>
+            <div class="grid-column column-two-thirds">
+                <h1>Malware</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a class="button button-primary primary-solid" href="{{ url_for('page.malware') }}">
+                    Learn about malware
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="grid-row">
+        <div class="grid-column column-two-thirds">
+            <h1>Passwords</h1>
+            <p>
+                It’s important to have strong passwords for your important online accounts, such as your email, banking
+                and social media. It’s easy to create strong, easy-to-remember passwords using the <b>three random words
+                rule</b>.
+            </p>
+            <a class="button button-primary primary-solid" href="{{ url_for('page.passwords') }}">
+                Learn about passwords
+            </a>
+        </div>
+        <div class="grid-column column-one-third">
+            <img src="/static/images/password.png" alt="">
         </div>
     </section>
 
