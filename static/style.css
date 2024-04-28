@@ -178,13 +178,31 @@ fieldset {
     border: 2px solid var(--on-background);
     border-radius: 5px;
     display: inline-block;
+    margin: 1em;
 }
 
 legend {
     font-family: Montserrat, serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--on-tertiary-container);
+}
+
+summary {
+    font-family: Montserrat, serif;
     font-size: large;
     font-weight: bold;
-    color: var(--on-background);
+}
+
+details {
+    font-family: Montserrat, serif;
+    font-size: medium;
+}
+
+.info-box {
+    border: 2px solid var(--on-tertiary-container);
+    background-color: var(--tertiary-container);
+    color: var(--on-tertiary-container);
 }
 
 .checkbox {
@@ -332,17 +350,14 @@ img {
     max-height: 20rem;
 }
 
-details {
-    font-family: Montserrat, serif;
-    font-size: medium;
-}
-
 .email {
     border-left: 2px solid var(--on-background);
     border-right: 2px solid var(--on-background);
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: medium;
+    font-weight: normal;
 }
 
 .email-top {
