@@ -30,7 +30,7 @@
                 <img alt="" src="/static/images/scam.png"/>
             </div>
             <div class="grid-column column-half">
-                <h1>Reporting Fraud and Scams</h1>
+                <h2>Reporting Fraud and Scams</h2>
                 <p>
                     You can report scam emails, calls, texts, and websites using the National Cyber Security Centre
                     website.
@@ -53,47 +53,51 @@
 
     <section class="grid-row" id="information">
         <div class="grid-column column-full">
-            <h1>How to spot a scam email</h1>
+            <h2>How to spot a scam email</h2>
             <p>
                 Scammers will often pretend to be someone you trust, such as your doctor or bank.
             </p>
         </div>
 
-        <fieldset class="grid-column column-two-thirds info-box">
-            <legend>Tale-tale signs of a scam <cite><a href="#citations"><sup>1</sup></a></cite></legend>
-            <details>
-                <summary>1. Authority</summary>
-                <p>
-                    Scammers will often pretend to be important people or organisations, such as your doctor, bank or a
-                    government department.
-                </p>
-            </details>
-            <details>
-                <summary>2. Urgency</summary>
-                <p>
-                    Scammers will pressure you to respond quickly, such as within 24 hrs.
-                </p>
-            </details>
-            <details>
-                <summary>3. Emotion</summary>
-                <p>
-                    Scammers may use threatening language to make you panic into responding.
-                </p>
-            </details>
-            <details>
-                <summary>4. Scarcity</summary>
-                <p>
-                    Are they offering something in short supply, like concert tickets or money?
-                </p>
-            </details>
-            <details>
-                <summary>5. Current Events</summary>
-                <p>
-                    Are you expecting to receive the scam message? Scammers will often exploit current news events or
-                    specific times of year, like tax reporting.
-                </p>
-            </details>
-        </fieldset>
+        <div class="grid-column column-no-padding column-two-thirds">
+            <fieldset class="info-box">
+                <legend>Tale-tale signs of a scam <cite><a href="#citations"><sup>1</sup></a></cite></legend>
+                <details>
+                    <summary>1. Authority</summary>
+                    <p>
+                        Scammers will often pretend to be important people or organisations, such as your doctor, bank
+                        or a
+                        government department.
+                    </p>
+                </details>
+                <details>
+                    <summary>2. Urgency</summary>
+                    <p>
+                        Scammers will pressure you to respond quickly, such as within 24 hrs.
+                    </p>
+                </details>
+                <details>
+                    <summary>3. Emotion</summary>
+                    <p>
+                        Scammers may use threatening language to make you panic into responding.
+                    </p>
+                </details>
+                <details>
+                    <summary>4. Scarcity</summary>
+                    <p>
+                        Are they offering something in short supply, like concert tickets or money?
+                    </p>
+                </details>
+                <details>
+                    <summary>5. Current Events</summary>
+                    <p>
+                        Are you expecting to receive the scam message? Scammers will often exploit current news events
+                        or
+                        specific times of year, like tax reporting.
+                    </p>
+                </details>
+            </fieldset>
+        </div>
     </section>
 
     <hr>
@@ -101,9 +105,9 @@
     <section class="primary-container" id="quiz-link">
         <div class="grid-row">
             <div class="grid-column column-half">
-                <h1>Test Your Knowledge</h1>
+                <h2>Think You Can Spot a Scam Email?</h2>
                 <p>
-                    See if you can spot the signs of a phishing email!
+                    See if you can spot the signs of a phishing email using our interactive tool!
                 </p>
                 <br>
                 <a class="button button-primary primary-solid" href="{{ url_for('page.phishing_quiz') }}">
