@@ -35,7 +35,7 @@ html, body {
 }
 
 .grid-row {
-    display: inline-block;
+    display: block;
     clear: both;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -185,6 +185,13 @@ a {
 
 h1 {
     font-family: Montserrat, serif;
+    font-size: xxx-large;
+    color: var(--on-background);
+    margin-top: 0.5em;
+}
+
+h2 {
+    font-family: Montserrat, serif;
     font-size: xx-large;
     color: var(--on-background);
     margin-top: 0.5em;
@@ -199,7 +206,7 @@ fieldset {
     border: 2px solid var(--on-background);
     border-radius: 5px;
     display: inline-block;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 legend {
@@ -224,6 +231,7 @@ details {
     border: 2px solid var(--on-tertiary-container);
     background-color: var(--tertiary-container);
     color: var(--on-tertiary-container);
+    width: 100%;
 }
 
 .checkbox {
